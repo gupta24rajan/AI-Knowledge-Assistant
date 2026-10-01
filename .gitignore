@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment variables (contains your GROQ_API_KEY - never commit this)
+.env
+.env.*
+
+# Local data: source documents and the generated Chroma vector database
+# Both are recreated locally, so they stay out of the repo
+data/

@@ -1,0 +1,24 @@
+[project]
+name = "ai-knowledge-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rajan Gupta", email = "rajan99209119@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "groq>=1.7.0",
+    "pydantic-settings>=2.15.0",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+ai-knowledge-assistant = "ai_knowledge_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
